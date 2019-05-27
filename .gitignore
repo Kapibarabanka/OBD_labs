@@ -1,0 +1,6 @@
+# Local development
+.idea
+.idea/
+
+#Dependency directories
+node_modules/
