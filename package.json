@@ -19,5 +19,9 @@
   "homepage": "https://github.com/Kapibarabanka/jest_lection#readme",
   "devDependencies": {
     "jest": "^24.8.0"
+  },
+
+  "jest": {
+    "verbose": true
   }
 }

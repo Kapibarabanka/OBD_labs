@@ -1,20 +1,18 @@
-function initial() {
-    return 1;
-}
+const depends = require('./depends_for_sum')
 
 function simple_sum(a, b) {
     return a + b;
 }
 
 function depending_sum(a, b) {
-    return initial() + a + b;
+    return depends.initial() + a + b;
 }
 
 function async_sum(a, b) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve({
-                value: initial() + a + b,
+                value: depends.initial() + a + b,
                 param1: a,
                 param2: b,
             });
